@@ -29,4 +29,14 @@ public class CamionCit extends VehiculeCharge {
         throw new Throwable("Erreur charge trop haute");
 
     }
+
+    @Override
+    public int getWeight() {
+        return 0;
+    }
+
+    @Override
+    public int getHorsePower() {
+        return 0;
+    }
 }

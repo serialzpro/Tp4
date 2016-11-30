@@ -3,7 +3,7 @@ package com.company.Main;
 /**
  * Created by axelm on 28/11/2016.
  */
-public abstract class Vehicule  {
+public abstract class Vehicule implements Engin{
 
     private String immatriculation;
     private float poidVide;

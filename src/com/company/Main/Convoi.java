@@ -13,7 +13,7 @@ public class Convoi {
     }
 
     public float getVitesseMax (){
-        float vitesseMax = 10000;
+        float vitesseMax = 50000;
          for (int i=0; i<listeVehicule.size();i++){
              if (vitesseMax > listeVehicule.get(i).getVitesseMax()){
                  vitesseMax = listeVehicule.get(i).getVitesseMax();
@@ -25,6 +25,14 @@ public class Convoi {
     public void addVehicule(Vehicule vehicule)
     {
         listeVehicule.add(vehicule);
+    }
+
+    public void deleteVehicule (int index) {
+        listeVehicule.remove(index-1);
+    }
+
+    public ArrayList<Vehicule> getListeVehicule() {
+        return listeVehicule;
     }
 
 }

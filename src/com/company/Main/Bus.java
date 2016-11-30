@@ -10,4 +10,13 @@ public class Bus extends Vehicule {
     }
 
 
+    @Override
+    public int getWeight() {
+        return 0;
+    }
+
+    @Override
+    public int getHorsePower() {
+        return 0;
+    }
 }

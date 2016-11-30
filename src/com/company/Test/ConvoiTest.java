@@ -24,6 +24,24 @@ public class ConvoiTest extends TestCase {
     }
 
     @Test
+    public void testAddVehicule() throws Throwable {
+        testCam = new CamionCit(4000);
+        convoi = new Convoi();
+        convoi.addVehicule(testCam);
+        assertEquals(true,convoi.getListeVehicule().contains(testCam));
+    }
+
+    @Test
+    public void testDeleteVehicule() throws Throwable {
+        testCam = new CamionCit(4000);
+        convoi = new Convoi();
+        convoi.addVehicule(testCam);
+        convoi.deleteVehicule(1);
+        assertEquals(true,convoi.getListeVehicule().isEmpty());
+
+    }
+
+    @Test
     public void testGetVitesseMax() throws Throwable {
         testCam = new CamionCit(4000);
         testCam2 = new CamionCit(8000);
